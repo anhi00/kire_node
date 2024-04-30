@@ -1,0 +1,102 @@
+###
+
+@server=http://localhost:4243
+
+###
+
+GET {{server}}/products/allProducts
+
+###
+
+GET {{server}}/products/availableProducts
+
+###
+
+GET {{server}}/products/unavailableProducts
+
+###
+
+GET {{server}}/products/displayProducts
+
+###
+
+GET {{server}}/products/highestToLowestPrice
+
+###
+
+GET {{server}}/products/lowestToHighestPrice
+
+###
+
+GET {{server}}/products/category/3
+
+###
+
+GET {{server}}/products/individual/10
+
+###
+
+GET {{server}}/products/deals/Monday
+
+###
+
+POST {{server}}/products/addProduct
+Content-Type: application/json
+
+{
+    "data":{
+        "productName": "New product",
+        "productImage": "bla",
+        "productSummary": "bla",
+        "productDescription": "bla",
+        "price": 2,
+        "availability": 1,
+        "display": 0,
+        "categoryID": 3
+    }
+}
+
+###
+
+PUT {{server}}/product/24
+Content-Type: application/json
+
+{
+    "data":{
+        "productName": "Product Update",
+        "productImage": "bla",
+        "productSummary": "bla",
+        "productDescription": "bla",
+        "price": 2,
+        "availability": 1,
+        "display": 0,
+        "categoryID": 3
+    }
+}
+
+###
+
+PUT {{server}}/product/updatePrice/4
+Content-Type: application/json
+
+{
+    "data":{
+        "price": 40
+    }
+}
+
+###
+
+PUT {{server}}/product/updateDeal/10
+Content-Type: application/json
+
+{
+    "data":{
+        "deal": "50% off"
+    }
+}
+
+###
+
+DELETE {{server}}/product/24
+
