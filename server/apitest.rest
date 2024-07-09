@@ -45,14 +45,14 @@ Content-Type: application/json
 
 {
     "data":{
-        "productName": "New product",
-        "productImage": "bla",
-        "productSummary": "bla",
-        "productDescription": "bla",
-        "price": 2,
+        "productName": "Glassy",
+        "productImage": "https://www.momijibeauty.com/cdn/shop/files/MOMIJI-Glassy-01.jpg?v=1704230259&width=2048",
+        "productSummary": "Glassy is a moisturizing cream with a gel texture that hydrates, moisturizes, softens, comforts, illuminates and protects your skin from external aggressors.",
+        "productDescription": "We wanted a moisturizer that would fulfill your dreams: hydrate, moisturize, soften, comfort, illuminate and protect from external aggressors. So we created Glassy, ​​the new step in the Momiji routine that does all that with the help of antioxidants, peptides and triple hyaluronic acid.",
+        "price": 28,
         "availability": 1,
-        "display": 0,
-        "categoryID": 3
+        "display": 1,
+        "categoryID": 1
     }
 }
 
@@ -69,7 +69,7 @@ Content-Type: application/json
         "productDescription": "bla",
         "price": 2,
         "availability": 1,
-        "display": 0,
+        "display": 1,
         "categoryID": 3
     }
 }

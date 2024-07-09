@@ -1,0 +1,226 @@
+
+    <div class="row">
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 paddingBanner">
+            <img alt="Woman with beautiful skin in a soft light" class="bannerImg" src="/assets/banner2.jpg">
+        </div>
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 mainCopy">
+            <h1 class="mainCopyFont"> Make your skin glow this summer </h1>
+            <h4 class="mainCopySmallFont"> Find the best sunscreen for a glowy summer skin. <span class="italicMainFont">Limited time edition.</span></h4>
+            <button class="buttonMargin btnBox"><a class="btnText" href="#"> Shop now </a></button>
+        </div>
+    </div>
+
+    <div class="container-fluid bestSellersSection">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="subtitleItalicText"> New arrivals </h3>
+            </div>             
+        </div>
+        <div class="container">
+        <div class="row d-flex">
+            <!--<div class="d-flex">-->
+    
+                <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                    <img alt="Photo of Advanced Snail 96 Mucin product" class="productImgSeller" routerLink="/individual" src="/assets/product_1.jpg">
+                    <div class="infoFlex">
+                        <h6 class="productTitle">ADVANCED SNAIL 96 MUCIN</h6>
+                        <p class="productPrice">$30</p>
+                        <div>
+                        <button class="addBtn"><a class="" routerLink="/individual">Add to cart</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                    <img alt="Photo of Ginseng Essence Water product" class="productImgSeller" src="/assets/product_2.jpg">
+                    <div class="infoFlex">
+                    <h6 class="productTitle">GINSENG ESSENCE WATER</h6>
+                    <p class="productPrice">$18</p>
+                    <button class="addBtn"><a class="" routerLink="/individual">Add to cart</a></button>
+                    </div>
+                </div>
+                <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                    <img alt="Photo of Glow Replenishing Rice Milk product" class="productImgSeller" src="/assets/product_3.jpg">
+                    <div class="infoFlex">
+                    <h6 class="productTitle">GLOW REPLENISHING RICE MILK</h6>
+                    <p class="productPrice">$18</p>
+                    <button class="addBtn"><a class="" routerLink="/individual">Add to cart</a></button>
+                    </div>
+                </div>
+                <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                    <img alt="Photo of Custom Serum by Prose product" class="productImgSeller" src="/assets/product_4.jpg">
+                    <div class="infoFlex">
+                    <h6 class="productTitle">CUSTOM SERUM</h6>
+                    <p class="productPrice">$50</p>
+                    <button class="addBtn"><a class="" routerLink="/individual">Add to cart</a></button>
+                    </div>
+                </div>
+    
+            <!--</div>-->
+        </div>
+        </div>
+    </div>
+
+    <div class="container-fluid dealsSection">
+            <h2 class="subtitleFont">TODAY’S DEALS</h2>
+            <div class="d-flex ">
+                <div class="row ">
+                @for (dealRow of deals; track dealRow.dealsID){
+                <div class="col-md-6 col-lg-6 col-sm-12 marginDealsImgs flexMobile">
+                    <div class="d-flex paddingIpad">
+                    <div class="productImgFlexDeals">
+                        <img class="dealsImg" [src]="dealRow.productImage">
+                        <div class="infoFlex">
+                        <h6 class="productTitle">{{dealRow.productName}}</h6>
+                        <div class="d-flex">
+                            <p class="noDealPrice">${{dealRow.price}}</p>
+                            <p class="dealsPrice">${{dealRow.deal}}</p>
+                        </div>
+                        <p class="addBtn">Add to cart</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                }
+                </div>
+
+
+                    <!--<div class="productImgFlex">
+                        <img class="dealsImg" src="/assets/productImg.jpg">
+                        <h6 class="productTitle">LOREM IPSUM</h6>
+                        <div class="d-flex">
+                            <p class="noDealPrice">$40</p>
+                            <p class="dealsPrice">$35</p>
+                        </div>
+                        <p class="addBtn">Add to cart</p>
+                    </div>
+                </div>
+                <div class="d-flex marginDealsImgs">
+                    <div class="productImgFlex">
+                        <img class="dealsImg" src="/assets/productImg.jpg">
+                        <h6 class="productTitle">LOREM IPSUM</h6>
+                        <div class="d-flex">
+                            <p class="noDealPrice">$40</p>
+                            <p class="dealsPrice">$35</p>
+                        </div>
+                        <p class="addBtn">Add to cart</p>
+                    </div>
+                    <div class="productImgFlex">
+                        <img class="dealsImg" src="/assets/productImg.jpg">
+                        <h6 class="productTitle">LOREM IPSUM</h6>
+                        <div class="d-flex">
+                            <p class="noDealPrice">$40</p>
+                            <p class="dealsPrice">$35</p>
+                        </div>
+                        <p class="addBtn">Add to cart</p>
+                    </div>
+                </div>-->
+            <div class="photoDeals d-flex justify-content-center align-content-center">
+                <img alt="Woman holding a skin care serum with her hands" class="dealsBigImg" src="/assets/dealsImg.jpg">
+            </div>
+        </div>
+    </div>
+    
+
+<div class="container-fluid aboutUsSection">
+    <div class="">
+        <h2 class="aboutUsCopyItalics">The best skin centric, vegan & cruelty free <br> skin care from all over the world</h2>
+        <div class="flexAboutUs">
+        <button class="buttonMargin btnBox"><a class="btnText" href="#"> About us </a></button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bestSellersSection">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="subtitleItalicText"> Best sellers </h3>
+        </div>             
+    </div>
+    <div class="container">
+    <div class="row d-flex"> 
+
+            <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                <img alt="Photo of Matte Sun stick sunscreen product" class="productImgSeller" src="/assets/product_5.jpg">
+                <h6 class="productTitle">MATTE SUN STICK</h6>
+                <p class="productPrice">$18</p>
+                <p class="addBtn">Add to cart</p>
+            </div>
+            <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                <img alt="Photo of BHA Liquid Exfoliant product" class="productImgSeller" src="/assets/product_6.jpg">
+                <h6 class="productTitle">2% BHA LIQUID EXFOLIANT</h6>
+                <p class="productPrice">$35</p>
+                <p class="addBtn">Add to cart</p>
+            </div>
+            <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                <img alt="Photo of Green Plum Cleanser product" class="productImgSeller" src="/assets/product_7.jpg">
+                
+                    <h6 class="productTitle">GREEN PLUM CLEANSER</h6>
+                    <p class="productPrice">$20</p>
+                    <p class="addBtn">Add to cart</p>
+  
+            </div>
+            <div class="productImgFlex col-sm-6 col-md-6 col-lg-3">
+                <img alt="Photo of Pore-reducing Toner product" class="productImgSeller" src="/assets/product_8.jpg">
+                <h6 class="productTitle">PORE-REDUCING TONER</h6>
+                <p class="productPrice">$24</p>
+                <p class="addBtn">Add to cart</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid pressSection">
+    <div class="pressFlex">
+        <h2 class="subtitleFont text-center">RECOMMENDED BY</h2>
+        <div class="d-flex">
+            <img alt="Vogue Logo" class="logoImg" src="/assets/logos_1.jpg">
+            <img alt="Forbes Logo" class="logoImg" src="/assets/logos_2.jpg">
+            <img alt="Allure Logo" class="logoImg" src="/assets/logos_3.jpg">
+            <img alt="InStyle Logo" class="logoImg" src="/assets/logos_4.jpg">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid finalCTASection">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <img alt="Beautiful arrangement of skin care products set in a bathroom next to a plant" class="lastProductsImg" src="/assets/productsImg.jpg">
+        </div>
+        <div class="col-lg-6 col-md-612col-sm-12 lastCopy">
+            <h1 class="mainCopyFont"> Where beauty & health meet </h1>
+            <h4 class="mainCopySmallFont"> The doorway to the leading skin care product selection, <span class="italicMainFont">with shipping all around the world.</span></h4>
+            <button class="buttonMargin btnBox"><a class="btnText" href="#"> View all products </a></button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid instagramPostsSection">
+    <h2 class="subtitleItalicText text-center">Trusted by clients</h2>
+    <div class="container d-flex">
+    <div class="row flexPosts"> 
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 flexPosts">
+            <img class="postImg" src="/assets/instaPosts_1.jpg">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 flexPosts">
+            <img class="postImg" src="/assets/instaPosts_2.jpg">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 flexPosts">
+            <img class="postImg" src="/assets/instaPosts_3.jpg">
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 flexPosts">
+            <img class="postImg" src="/assets/instaPosts_4.jpg">
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <img alt="Instagram logo" class="iconMedia" src="/assets/socialMedia_icons_1.png">
+                <img alt="Facebook logo" class="iconMedia" src="/assets/socialMedia_icons_2.png">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

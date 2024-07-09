@@ -1,22 +1,31 @@
 import express from "express";
 import mysql from "mysql2";
 import cors from 'cors';
+import 'dotenv/config';
 
 const server = express();
 
 server.use(express.json());
 server.use(cors());
 
-const port = 4243;
+const port = process.env.NODEPORT;
 
 const db = mysql.createPool({
-    host: "localhost",
-    port: 8889,
-    user: "root",
-    password: "root",
-    database: "KireDB",
-    connectionlimit: 10,
-})
+//     host: "localhost",
+//     port: 8889,
+//       user: "root",
+//     password: "root",
+//     database: "KireDB",
+//     connectionlimit: 10,
+
+        host:process.env.DBHOST,
+        port:process.env.MYSQLPORT,
+        user:process.env.DBUSER,
+        password:process.env.DBPASSWORD,
+        database:process.env.DATABASE,
+        connectionlimit:10,
+
+ })
 
 server.listen(port, function(){
     console.log("The server is now running in port 4243");
@@ -123,7 +132,7 @@ server.get('/products/allProducts', function(req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -140,7 +149,7 @@ server.get('/products/allProducts', function(req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -157,7 +166,7 @@ server.get('/products/allProducts', function(req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -178,7 +187,7 @@ server.post('/products/addProduct', function (req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -197,7 +206,7 @@ server.put('/product/:productID', function (req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -213,7 +222,7 @@ server.put('/product/updatePrice/:productID', function (req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -229,7 +238,7 @@ server.put('/product/updateDeal/:dealID', function (req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 
@@ -246,7 +255,7 @@ server.delete('/product/:productID', function (req, res){
             res.json({errorMessage: error})
         }
         else{
-            res.json(data);
+            res.json(data[0]);
         }
     })
 

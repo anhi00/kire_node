@@ -1,0 +1,123 @@
+
+
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-12 dealBanner">
+            <img class="arrowLeft" src="/assets/arrow_left.png">
+            <div><p class="dealText">20% off & free shipping on first purchase</p></div>
+            <img class="arrowRight" src="/assets/arrow_right.png">
+        </div>
+      </div>
+    </div>
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home">
+        <img alt="Kire Skin Care logo" class="logo" src="/assets/kire_logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link navFont" aria-current="page" routerLink="/products">Shop all</a>
+         
+          <li class="nav-item">
+            <li class="nav-item dropdown">
+              <button class="btn btn-secondary dropdown-toggle navFont" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item dropFont" href="#">Cleansers</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item dropFont" href="#">Moisturizers</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item dropFont" href="#">Face Serums</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item dropFont" href="#">Sunscreen</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item dropFont" href="#">Treatments</a></li>
+              </ul>
+            </li>
+        
+          <li class="nav-item">
+            <a class="nav-link navFont" href="#">Log in</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link navFont" routerLink="/individual" >Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link navFontCart" href="#">Cart (0)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <router-outlet>
+  
+    </router-outlet>
+  </div>
+
+  <footer class="container-fluid footerWeb">
+
+        <img class="logoWhite" src="/assets/logo_white.png">
+
+    <div class="row">
+      <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-md-12 webSectionsFooter">
+        <div class="d-flex flexIpad">
+        <div class="infoColumn">
+            <h6 class="footerTitleFont">SHOP</h6>
+            <p class="footerFont">Cleansers </p>
+            <p class="footerFont">Moisturizers </p>
+            <p class="footerFont">Face Serums </p>
+            <p class="footerFont">Sunscreen</p>
+            <p class="footerFont">Treatments</p>
+        </div >
+        <div class="infoColumn">
+          <h6 class="footerTitleFont">COMPANY</h6>
+          <p class="footerFont">About Us </p>
+          <p class="footerFont">Loyalty</p>
+          <p class="footerFont">Careers</p> 
+      </div>
+      <div class="infoColumn">
+        <h6 class="footerTitleFont">HELP</h6>
+        <p class="footerFont">Contact </p>
+        <p class="footerFont">FAQ</p> 
+        <p class="footerFont">Refund Policy</p> 
+        <p class="footerFont"> My Account </p>
+        <p class="footerFont"> Privacy Policy  </p>
+        
+      </div>
+      </div>
+      </div>
+
+      <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-md-12">
+          <div class="form-group">
+            <h6 class="footerTitleFont">JOIN THE CLUB</h6>
+            <p class="footerFont marginBottomEmail">Sign in to be the first to know about new products and promotions. </p>
+            <div class="flexNewsLetter">
+              <label for="exampleInputEmail1 orangeText"></label>
+              <input type="email" class="form-control whiteText marginBottomEmail" id="exampleInputEmail1" placeholder="Email">
+              <div class="emailSubmit">
+                  <button class="buttonMargin lineBtn"><a class="whiteBtnText" href="#"> SEND </a></button>
+              </div>
+          </div>
+        </div>
+        <div class="d-flex align-content-center connectSection flexSocialMobile">
+          <img class="iconMedia" src="/assets/instagram.png">
+          <img class="iconMedia" src="/assets/facebook.png">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 legalSection">
+        <p class="legalTextFont">2024 Kiré Skincare. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+

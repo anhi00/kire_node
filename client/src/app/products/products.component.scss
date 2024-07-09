@@ -1,0 +1,312 @@
+.titleMargin{
+    margin: 40px 0;
+}
+
+.subtitleItalicText{
+    font-size: 35px;
+    color: black;
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.productsSection{
+    margin-top: 20px;
+    width: 220%;
+}
+
+.productImgFlex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.productTitle{
+    font-size: 16px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.productPrice{
+    font-size: 16px;
+    color: black;
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align:center;
+}
+
+.addBtn{
+    font-size: 14px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align:center;
+    border-bottom: 1.5px solid #000;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.productImgSeller{
+    width: 90%;
+    margin-bottom: 30px;
+    justify-content:center;
+    position: relative;
+    z-index:-1;
+}
+
+.marginBottomRow{
+    margin-bottom: 30px;
+}
+
+.subtitleFont{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 85px;
+}
+
+.filterFont{
+    font-size: 19px;
+    color: black;
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.subfilterFont{
+    font-size: 15px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 60px;
+    
+}
+
+.comingSoonText{
+    font-size: 10px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.comingsoonTag{
+    background-color:#E65731;
+    padding: 2px 5px;
+    width: 35%;
+    margin-bottom: -19px;
+}
+
+
+.line{
+    border-bottom: 1px solid rgb(54, 54, 54);
+    margin: 20px 0;
+    width: 80%;
+}
+
+.lineBold{
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    margin: 20px 0;
+    width: 80%;
+}
+
+.filterSection{
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background-color: white;
+    width: 60%;
+    height: 750px;
+    position: sticky; 
+    top: 0; 
+    right: 0; 
+}
+
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+
+    .filterWeb{
+        display:none
+    }
+
+    .subtitleItalicText {
+        font-size: 28px;
+    }
+
+    .titleMargin {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .productImgSeller{
+        width: 70%;
+    }
+
+    .comingsoonTag {
+        width: 25%;
+    }
+
+    .comingSoonText{
+        font-size: 6px;
+    }
+
+    .dflexTag{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productTitle{
+        font-size: 12px;
+    }
+
+    .productPrice {
+        font-size: 12px;
+    }
+
+    .addBtn{
+        font-size: 12px;
+    }
+
+    .subtitleFont {
+        margin-top: 5px;
+        margin-bottom: 35px;
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: white;
+         --bs-btn-border-color: none;
+         --bs-btn-hover-bg: none;
+         --bs-btn-active-bg: white;
+         --bs-btn-active-color: black;
+
+    }
+
+    .btn {
+        --bs-btn-padding-x: 0 rem;
+    }
+
+    .filterDropdown{
+        margin-right: 40px;
+    }
+
+    .subfilterFontMob{
+        font-size: 12px;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-left: 0px;
+        border-bottom: 0.5px solid rgb(47, 47, 47);
+    }
+
+    .dropdown-menu {
+        border-radius: 0px;
+        border: none;
+    }
+    
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+    .filterWeb{
+        display:none
+    }
+
+    .btn-secondary {
+        --bs-btn-bg: white;
+         --bs-btn-border-color: none;
+         --bs-btn-hover-bg: none;
+         --bs-btn-active-bg: white;
+         --bs-btn-active-color: black;
+
+    }
+
+    .btn {
+        --bs-btn-padding-x: 0 rem;
+    }
+
+    .filterDropdown{
+        margin-right: 40px;
+    }
+
+    .subfilterFontMob{
+        font-size: 14px;
+        color: black;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-left: 0px;
+        border-bottom: 0.5px solid rgb(47, 47, 47);
+    }
+
+    .dropdown-menu {
+        border-radius: 0px;
+        border: none;
+    }
+
+     .subtitleFont{
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    
+
+
+    
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width:1365px){
+
+    .filterMobile{
+        display:none
+    }
+
+    .filterSection{
+        padding-left: 10px;
+    }
+
+    .subfilterFont {
+        margin-left: 5px;
+    }
+
+    .filterFont{
+        margin-left: 5px;
+    }
+
+    .subtitleFont[_ngcontent-ng-c1613336898] {
+        margin-left: 0px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1365px){
+
+    .filterMobile{
+        display:none !important;
+    }
+
+
+}

@@ -1,0 +1,473 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 100;
+    background-color: white !important;
+}
+
+.btn-secondary {
+
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-bg: white;
+    --bs-btn-active-bg: white;
+}
+
+.dropdown-menu-dark {
+    --bs-dropdown-color: white;
+    --bs-dropdown-bg: white;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-menu{
+    --bs-dropdown-border-radius: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: 58px;
+    margin-top: var(--bs-dropdown-spacer);
+}
+
+.navbar-toggler-icon {
+    background-image: url(/assets/hamburguer_menu.png);
+    width: 35px;
+}
+
+.navbar {
+    --bs-navbar-toggler-focus-width: none;
+    --bs-navbar-color: white;
+}
+
+.navbar-toggler {
+    border:none;
+}
+
+.dealBanner{
+    background-color: #E65731 ;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.dealText{
+    font-size: 14px;
+    color: #EDECE7;
+    text-align:center;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+    padding-top: 12px;
+}
+
+.arrowRight{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 18px;
+}
+
+.arrowLeft{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 18px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: black;
+}
+
+.logo{
+    height: 40px;
+    margin-left: 30px;
+}
+
+.logoWhite{
+    height: 40px;
+    margin-left: 45px;
+    margin-bottom: 40px;
+}
+
+.navFontCart{
+    margin-left: 50px;
+    margin-right: 0px;
+    font-size: 16px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.navFont{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+}
+
+.dropFont{
+    font-size: 15px;
+    color: black;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.logoSection{
+    margin-bottom: 40px;
+    padding-left: 60px;
+}
+
+
+.footerWeb{
+    background-color: #E65731;
+    padding: 40px 0;
+}
+
+.footerTitleFont{
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.footerFont{
+    font-size: 12px;
+    color: white;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.webSectionsFooter{
+    padding-left: 60px;
+}
+
+.infoColumn{
+    margin-right: 100px;
+}
+
+.legalTextFont{
+    font-size: 12px;
+    color: white;
+    font-family: "Brygada 1918", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align:center;
+    letter-spacing: 2px;
+}
+
+.legalSection{
+    margin-top: 60px;
+
+}
+
+.form-control {
+    width: 70%;
+    background-color: transparent;
+    font-size: 12px;
+    color: white;
+    border-radius: 0px;
+    transition: none;
+    border: 1.5px solid;
+    letter-spacing: 2px;
+    
+}
+
+.whiteText{
+    color: white !important;
+}
+
+input{
+    color: white !important;
+}
+
+.connectSection{
+    margin-top: 70px;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.lineBtn{
+    border: none;
+    background-color: white;
+    padding: 5px 30px;
+
+}
+
+.form-group{
+    margin-top: 0px;
+}
+
+.buttonMargin{
+    margin-left:40px;
+}
+
+.whiteBtnText{
+    font-size: 12px;
+    color: #E65731;
+    text-decoration: none;
+    letter-spacing: 4px;
+}
+
+.iconMedia{
+    height: 30px;
+    margin-right: 50px;
+}
+
+.flexNewsLetter{
+    display:flex;
+}
+
+@media only screen and (min-width: 375px) and (max-width:767px){
+
+    .arrowLeft {
+        height: 15px;
+    }
+
+    .arrowRight {
+        height: 15px;
+    }
+
+    .dealText{
+        font-size: 9px;
+    }
+
+    .logo {
+        height: 34px;
+        margin-left: 5px;
+    }
+
+    .btn {
+        --bs-btn-padding-x: 0 rem;
+    }
+
+    .dropdown-menu{
+        margin-top: var(--bs-dropdown-spacer);
+        --bs-dropdown-border-width: none;
+    }
+
+    .dropdown-menu{
+        width: 60%;
+        margin-left: 80px;
+    }
+
+    .footerTitleFont {
+        font-size: 14px;
+    }
+
+    .logoWhite{
+        height: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .footerFont {
+        font-size: 9px;
+    }
+
+    .infoColumn {
+        margin-right: 23px;
+    }
+
+    .webSectionsFooter{
+        padding-left: 36px;
+        margin-bottom: 30px;
+    }
+
+    .form-group{
+        margin-top: 0px;
+        margin-left: 26px;
+        padding-right: 20px;
+    }
+    
+
+    .flexNewsLetter{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .marginBottomEmail{
+        margin-bottom: 40px;
+    }
+
+    .buttonMargin{
+        margin-left: 0px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .flexSocialMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .iconMedia {
+        height: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .connectSection {
+        margin-top: 40px;
+    }
+
+    .legalSection {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+    .dropdown-menu{
+        margin-top: var(--bs-dropdown-spacer);
+        --bs-dropdown-border-width: none;
+    }
+
+    .dropdown-menu{
+        width: 60%;
+        margin-left: 80px;
+    }
+
+    .btn {
+        --bs-btn-padding-x: 0 rem;
+    }
+
+    .webSectionsFooter{
+        padding-left: 66px;
+        margin-bottom: 30px;
+    }
+
+    .form-group{
+        margin-top: 0px;
+        margin-left: 55px;
+        padding-right: 20px;
+    }
+    
+
+    .flexNewsLetter{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .marginBottomEmail{
+        margin-bottom: 40px;
+    }
+
+    .buttonMargin{
+        margin-left: 0px;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .flexSocialMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .iconMedia {
+        height: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .connectSection {
+        margin-top: 40px;
+    }
+
+    .legalSection {
+        margin-top: 50px;
+    }
+
+    .infoColumn[_ngcontent-ng-c3167136318] {
+        margin-right: 131px;
+    }
+
+    .navbar-toggler-icon[_ngcontent-ng-c3167136318] {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1365px){
+
+    .navFont {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .navFontCart{
+        margin-left: 25px;
+    }
+
+    .infoColumn{
+        margin-right: 200px;
+    }
+
+    .webSectionsFooter {
+        display:flex;
+        justify-content: center;
+    }
+
+    .form-group{
+        margin-top: 50px;
+        margin-left: 75px;
+        padding-right: 20px;
+    }
+    
+
+    .flexNewsLetter{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .marginBottomEmail{
+        margin-bottom: 40px;
+    }
+
+    .buttonMargin{
+        margin-left: 0px;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .flexSocialMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .iconMedia {
+        height: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+
+
+}

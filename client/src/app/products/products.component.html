@@ -1,0 +1,171 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 titleMargin">
+            <h3 class="subtitleItalicText text-center">{{  title }}</h3>
+        </div>             
+    </div>
+
+    <div class="filterMobile">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="subtitleFont">FILTER BY</h3> 
+        </div>
+    </div>
+
+
+    <div class=" d-flex">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle filterFont filterDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item subfilterFontMob" (click)="cleansers()">Cleansers</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="moisturizers()">Moisturizers</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="faceSerums()">Face Serums</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="sunscreen()">Sunscreen</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="treatments()">Treatments</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle filterFont filterDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sort By
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item subfilterFontMob" (click)="sortLtoH()">Lowest to highest price</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="sortHtoL()">Highest to lowest price</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="available()">In stock</a></li>
+              <li><a class="dropdown-item subfilterFontMob" (click)="unavailable()">Out of stock</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="d-flex">
+
+    <div class="filterSection filterWeb">
+        <h3 class="subtitleFont">FILTER BY</h3>
+        <div class="lineBold"></div>
+        <h6 class="filterFont">Categories</h6>
+        <div>
+            <a  (click)="cleansers()"><p class="subfilterFont" style="cursor:pointer"> Cleansers </p></a>
+            <a  (click)="moisturizers()"><p class="subfilterFont" style="cursor:pointer"> Moisturizers </p></a>
+            <a  (click)="faceSerums()"><p class="subfilterFont" style="cursor:pointer"> Face Serums </p></a>
+            <a  (click)="sunscreen()"><p class="subfilterFont" style="cursor:pointer"> Sunscreen </p></a>
+            <a  (click)="treatments()"><p class="subfilterFont" style="cursor:pointer"> Treatments </p></a>
+        </div>
+        <div class="line"></div>
+        <h6 class="filterFont">Prices</h6>
+        <div>
+            <a  (click)="sortLtoH()"><p class="subfilterFont" style="cursor:pointer"> Lowest to highest </p></a>
+            <a  (click)="sortHtoL()"><p class="subfilterFont" style="cursor:pointer"> Highest to lowest </p></a>
+        </div>
+        <div class="line"></div>
+        <h6 class="filterFont">Disponibility</h6>
+        <div>
+            <a  (click)="available()"><p class="subfilterFont" style="cursor:pointer"> In stock </p></a>
+            <a  (click)="unavailable()"><p class="subfilterFont" style="cursor:pointer"> Out of stock </p></a>
+        </div>
+    </div>
+
+    <div class="row productsSection">
+
+        @for (productRow of products; track productRow.productID){
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            
+            <div class="d-flex marginBottomRow">
+                
+                <div class="productImgFlex">
+                    <div class="dflexTag">
+                    <!--<div class="flexComing">
+                        <p class="comingSoonText comingsoonTag">COMING SOON</p>
+                    </div>-->
+                    <img class="productImgSeller" [src]="productRow.productImage">
+                    </div>
+                    <h6 class="productTitle">{{productRow.productName}}</h6>
+                    <p class="productPrice">${{productRow.price}}</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+            </div>
+        </div>
+        }
+               <!-- <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+            </div>
+            <div class="d-flex marginBottomRow">
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+            </div>
+            <div class="d-flex marginBottomRow">
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+            </div>
+            <div class="d-flex marginBottomRow">
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+                <div class="productImgFlex">
+                    <img class="productImgSeller" src="/assets/productImg.jpg">
+                    <h6 class="productTitle">LOREM IPSUM</h6>
+                    <p class="productPrice">$40</p>
+                    <p class="addBtn">Add to cart</p>
+                </div>
+            </div>-->
+
+</div>
+</div>
+
+
