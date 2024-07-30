@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:4243/products/deals/Monday').subscribe (dealProduct => {
+    this.http.get<any[]>(environment.server + '/products/deals/Monday').subscribe (dealProduct => {
     console.log (dealProduct);
     this.deals = dealProduct;
     });

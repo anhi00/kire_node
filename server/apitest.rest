@@ -1,6 +1,8 @@
 ###
 
-@server=http://localhost:4243
+#@server=http://localhost:4243
+
+@server=https://hammerhead-app-o54s3.ondigitalocean.app
 
 ###
 

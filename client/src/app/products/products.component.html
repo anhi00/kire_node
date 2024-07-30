@@ -82,7 +82,7 @@
                     <!--<div class="flexComing">
                         <p class="comingSoonText comingsoonTag">COMING SOON</p>
                     </div>-->
-                    <img class="productImgSeller" [src]="productRow.productImage">
+                    <a [routerLink]="['/products', productRow.productID]"><img class="productImgSeller" [src]="productRow.productImage"></a>
                     </div>
                     <h6 class="productTitle">{{productRow.productName}}</h6>
                     <p class="productPrice">${{productRow.price}}</p>
